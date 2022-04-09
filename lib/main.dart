@@ -11,7 +11,9 @@ class AppRoot extends StatelessWidget {
     return MaterialApp(
         title: 'Frost',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(primaryColor: const Color(0XFF8082DD)),
+        theme: ThemeData(
+            primaryColor: const Color(0XFF8082DD),
+            scaffoldBackgroundColor: Colors.white),
         home: const OnBoarding());
   }
 }
