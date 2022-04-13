@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frost/pages/onboarding.dart';
+import 'package:frost/pages/welcome.dart';
 
 void main() => runApp(const AppRoot());
 
@@ -14,6 +15,10 @@ class AppRoot extends StatelessWidget {
         theme: ThemeData(
             primaryColor: const Color(0XFF8082DD),
             scaffoldBackgroundColor: Colors.white),
-        home: const OnBoarding());
+        initialRoute: '/onboard',
+        routes: {
+          '/onboard': (context) => const OnBoarding(),
+          '/welcome': (context) => const WelcomeScreen()
+        });
   }
 }
